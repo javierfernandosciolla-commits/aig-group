@@ -194,6 +194,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Employment Section */}
+      <section id="empleo" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-center mb-12">Sumate a Nuestro Equipo</h2>
+          <p className="text-center text-gray-700 mb-16 max-w-2xl mx-auto text-lg">
+            Arco Iris Group está en expansión. Buscamos profesionales comprometidos para fortalecer nuestras nuevas divisiones de logística y servicios.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* AIG DRIVERS Card */}
+            <div className="bg-gradient-to-br from-[#001f5c]/5 to-[#a4ff00]/10 p-8 rounded-lg border-2 border-[#001f5c]/20 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center justify-center h-16 w-16 bg-[#001f5c] rounded-lg mb-6 mx-auto">
+                <Truck className="h-8 w-8 text-[#a4ff00]" />
+              </div>
+              
+              <h3 className="text-2xl font-bold text-[#001f5c] text-center mb-4">AIG DRIVERS</h3>
+              
+              <p className="text-gray-700 text-center mb-6 leading-relaxed">
+                Buscamos conductores profesionales y responsables para nuestra división de logística corporativa.
+              </p>
+              
+              <div className="bg-white p-4 rounded-lg mb-6 border border-[#a4ff00]/30">
+                <p className="text-sm text-gray-700 font-semibold mb-2">📋 Requisitos:</p>
+                <p className="text-sm text-gray-600">Licencia vigente y conocimiento de zona Central</p>
+              </div>
+              
+              <a href="https://forms.gle/seuWhGkLRMjWucSY7" target="_blank" rel="noopener noreferrer" className="block">
+                <Button className="w-full bg-[#001f5c] hover:bg-[#001a47] text-white font-semibold py-3 rounded-lg transition-all">
+                  Postularme como Chofer
+                </Button>
+              </a>
+            </div>
+            
+            {/* AIG CLEANING Card */}
+            <div className="bg-gradient-to-br from-[#a4ff00]/10 to-[#001f5c]/5 p-8 rounded-lg border-2 border-[#a4ff00]/30 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center justify-center h-16 w-16 bg-[#a4ff00] rounded-lg mb-6 mx-auto">
+                <Sparkles className="h-8 w-8 text-[#001f5c]" />
+              </div>
+              
+              <h3 className="text-2xl font-bold text-[#001f5c] text-center mb-4">AIG CLEANING</h3>
+              
+              <p className="text-gray-700 text-center mb-6 leading-relaxed">
+                Formá parte de nuestra nueva división de limpieza integral para oficinas y residencias. Buscamos personal detallista con ganas de crecer.
+              </p>
+              
+              <div className="bg-white p-4 rounded-lg mb-6 border border-[#a4ff00]/30">
+                <p className="text-sm text-gray-700 font-semibold mb-2">✨ Perfil Buscado:</p>
+                <p className="text-sm text-gray-600">Personal detallista, responsable y con ganas de crecer profesionalmente</p>
+              </div>
+              
+              <a href="https://forms.gle/HT3zKpcAzv7WHDbT9" target="_blank" rel="noopener noreferrer" className="block">
+                <Button className="w-full bg-[#a4ff00] hover:bg-[#8fdd00] text-[#001f5c] font-semibold py-3 rounded-lg transition-all">
+                  Postularme para Limpieza
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Infrastructure Section */}
       <section id="infraestructura" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
