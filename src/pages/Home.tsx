@@ -465,7 +465,7 @@ export default function Home() {
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-lg border-2 border-[#a4ff00] shadow-lg">
               <h3 className="font-bold text-[#001f5c] mb-6 text-lg">Solicitar Información</h3>
-              <form action="https://formspree.io/f/xyzqwert" method="POST" className="space-y-4" onSubmit={(e) => {
+              <form action="https://formspree.io/f/xeepgwge" method="POST" className="space-y-4" onSubmit={(e) => {
                 const formData = new FormData(e.currentTarget);
                 formData.append('_subject', 'Nuevo contacto desde la Web AIG SA');
                 formData.append('_to', 'javierfernandosciolla@gmail.com');
