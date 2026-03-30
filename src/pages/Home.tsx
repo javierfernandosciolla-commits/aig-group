@@ -204,7 +204,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* AIG DRIVERS Card */}
-            <div className="bg-gradient-to-br from-[#001f5c]/5 to-[#a4ff00]/10 p-8 rounded-lg border-2 border-[#001f5c]/20 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-gradient-to-br from-[#001f5c]/5 to-[#a4ff00]/10 p-8 rounded-lg border-2 border-[#001f5c]/20 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
               <div className="flex items-center justify-center h-16 w-16 bg-[#001f5c] rounded-lg mb-6 mx-auto">
                 <Truck className="h-8 w-8 text-[#a4ff00]" />
               </div>
@@ -220,15 +220,24 @@ export default function Home() {
                 <p className="text-sm text-gray-600">Licencia vigente y conocimiento de zona Central</p>
               </div>
               
-              <a href="https://forms.gle/seuWhGkLRMjWucSY7" target="_blank" rel="noopener noreferrer" className="block">
-                <Button className="w-full bg-[#001f5c] hover:bg-[#001a47] text-white font-semibold py-3 rounded-lg transition-all">
-                  Postularme como Chofer
-                </Button>
-              </a>
+              <div className="space-y-3 mt-auto">
+                <a href="https://forms.gle/seuWhGkLRMjWucSY7" target="_blank" rel="noopener noreferrer" className="block">
+                  <Button className="w-full bg-[#001f5c] hover:bg-[#001a47] text-white font-semibold py-3 rounded-lg transition-all">
+                    Postularme como Chofer
+                  </Button>
+                </a>
+                
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                  <p className="text-xs text-gray-600 mb-3 leading-relaxed">¿Querés sumarte al equipo? Envía tu CV o consulta directamente a:</p>
+                  <a href="mailto:drivers@aiggroup.com.py?subject=Postulaci%C3%B3n%20-%20Driver" className="inline-flex items-center justify-center w-full gap-2 bg-[#a4ff00] hover:bg-[#8fdd00] text-[#001f5c] font-semibold py-2 px-4 rounded-lg transition-all">
+                    📩 drivers@aiggroup.com.py
+                  </a>
+                </div>
+              </div>
             </div>
             
             {/* AIG CLEANING Card */}
-            <div className="bg-gradient-to-br from-[#a4ff00]/10 to-[#001f5c]/5 p-8 rounded-lg border-2 border-[#a4ff00]/30 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-gradient-to-br from-[#a4ff00]/10 to-[#001f5c]/5 p-8 rounded-lg border-2 border-[#a4ff00]/30 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
               <div className="flex items-center justify-center h-16 w-16 bg-[#a4ff00] rounded-lg mb-6 mx-auto">
                 <Sparkles className="h-8 w-8 text-[#001f5c]" />
               </div>
@@ -244,11 +253,20 @@ export default function Home() {
                 <p className="text-sm text-gray-600">Personal detallista, responsable y con ganas de crecer profesionalmente</p>
               </div>
               
-              <a href="https://forms.gle/HT3zKpcAzv7WHDbT9" target="_blank" rel="noopener noreferrer" className="block">
-                <Button className="w-full bg-[#a4ff00] hover:bg-[#8fdd00] text-[#001f5c] font-semibold py-3 rounded-lg transition-all">
-                  Postularme para Limpieza
-                </Button>
-              </a>
+              <div className="space-y-3 mt-auto">
+                <a href="https://forms.gle/HT3zKpcAzv7WHDbT9" target="_blank" rel="noopener noreferrer" className="block">
+                  <Button className="w-full bg-[#a4ff00] hover:bg-[#8fdd00] text-[#001f5c] font-semibold py-3 rounded-lg transition-all">
+                    Postularme para Limpieza
+                  </Button>
+                </a>
+                
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                  <p className="text-xs text-gray-600 mb-3 leading-relaxed">Buscamos personal de limpieza. Postulate enviando tus datos a:</p>
+                  <a href="mailto:cleaning@aiggroup.com.py?subject=Postulaci%C3%B3n%20-%20Cleaning" className="inline-flex items-center justify-center w-full gap-2 bg-[#001f5c] hover:bg-[#001a47] text-[#a4ff00] font-semibold py-2 px-4 rounded-lg transition-all">
+                    📩 cleaning@aiggroup.com.py
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -279,23 +297,19 @@ export default function Home() {
                 <div className="bg-white p-6 rounded-lg border-l-4 border-[#ff3366] shadow-sm">
                   <h3 className="text-lg font-bold text-[#001f5c] mb-2">Continuidad Operativa</h3>
                   <p className="text-gray-700">
-                    Estos activos refuerzan la continuidad operativa y reflejan nuestra inversión de largo plazo en la región como plataforma estratégica.
+                    Infraestructura de respaldo y redundancia para garantizar operaciones sin interrupciones, con protocolos de seguridad y contingencia implementados.
                   </p>
                 </div>
               </div>
             </div>
-
-            <div className="space-y-4">
+            
+            <div className="relative">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/01Sync.jpeg"
-                alt="Sync Building - AIG Infrastructure"
-                className="rounded-lg shadow-lg w-full object-cover h-96"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/01Sync_5d3c1f5e.jpeg"
+                alt="Infraestructura AIG"
+                className="rounded-lg shadow-lg w-full h-auto"
               />
-              <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/01Syncaereo.jpeg"
-                alt="Aerial View - Sync Building"
-                className="rounded-lg shadow-lg w-full object-cover h-64"
-              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#001f5c]/20 to-transparent rounded-lg"></div>
             </div>
           </div>
         </div>
@@ -304,45 +318,31 @@ export default function Home() {
       {/* Leadership Section */}
       <section id="liderazgo" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-center mb-12">Liderazgo Ejecutivo</h2>
+          <h2 className="text-center mb-16">Liderazgo Ejecutivo</h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
-            <div>
-              <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/CPNCARLOSATORRESCEOdeAIGSA_ddd4fb15.png"
-                alt="Carlos Atorres - CEO"
-                className="rounded-lg shadow-lg w-full object-cover"
-              />
-              <div className="mt-6 bg-gradient-to-r from-[#001f5c] to-[#001a47] text-white p-6 rounded-lg shadow-lg text-center">
-                <p className="text-sm font-semibold text-[#a4ff00] mb-2">MAXIMA AUTORIDAD</p>
-                <h3 className="text-xl font-bold">C.E.O. C.P.N. Carlos A. Torres</h3>
-              </div>
-            </div>
-            
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-[#001f5c] mb-2">Dirección Estratégica</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  AIG S.A. está dirigida por profesionales con experiencia comprobada en estructuración de comercio internacional, supervisión regulatoria, coordinación financiera y administración de activos corporativos.
-                </p>
-              </div>
-              
-              <div className="bg-[#001f5c]/5 p-6 rounded-lg border border-[#a4ff00]/30">
-                <h4 className="font-bold text-[#001f5c] mb-3">Enfoque de Liderazgo</h4>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li className="flex items-center gap-2">
-                    <span className="h-2 w-2 bg-[#a4ff00] rounded-full"></span>
-                    Crecimiento institucional sostenible
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="h-2 w-2 bg-[#a4ff00] rounded-full"></span>
-                    Consolidación regional estratégica
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="h-2 w-2 bg-[#a4ff00] rounded-full"></span>
-                    Relaciones comerciales de largo plazo
-                  </li>
-                </ul>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-[#001f5c]/5 to-[#a4ff00]/10 p-8 rounded-lg border-2 border-[#001f5c]/20 shadow-lg">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="flex justify-center">
+                  <img 
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/CPNCARLOSATORRESCEOdeAIGSA_d0c5d7a7.png"
+                    alt="C.P.N. Carlos A. Torres - CEO"
+                    className="w-full max-w-sm rounded-lg shadow-md"
+                  />
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-bold text-[#001f5c] mb-2">C.P.N. Carlos A. Torres</h3>
+                  <p className="text-lg font-semibold text-[#a4ff00] mb-6">Chief Executive Officer (CEO)</p>
+                  
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    Con más de 20 años de experiencia en gestión de comercio internacional y operaciones aduanales, el C.P.N. Carlos A. Torres lidera AIG S.A. con visión estratégica y compromiso con la excelencia operativa.
+                  </p>
+                  
+                  <div className="bg-white p-4 rounded-lg border-l-4 border-[#a4ff00]">
+                    <p className="text-sm text-gray-700"><strong>Especialización:</strong> Gestión de Comercio Internacional, Compliance Aduanal, Estrategia Corporativa</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -350,135 +350,90 @@ export default function Home() {
       </section>
 
       {/* Compliance Section */}
-      <section className="py-20 bg-gradient-to-r from-[#001f5c] to-[#001a47] text-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-white mb-6">🔐 Cumplimiento y Gobernanza</h2>
-            <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-              AIG S.A. opera bajo el marco legal de la República del Paraguay y cumple con normativas nacionales e internacionales en materia de comercio exterior, regulación aduanera y transparencia financiera.
-            </p>
+          <h2 className="text-center mb-12">Cumplimiento y Gobernanza</h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#001f5c]">
+              <h3 className="text-lg font-bold text-[#001f5c] mb-4">✓ Regulación Aduanal</h3>
+              <p className="text-gray-700 text-sm">
+                Cumplimiento integral de normativas aduanales paraguayas e internacionales con supervisión continua.
+              </p>
+            </div>
             
-            <div className="grid md:grid-cols-2 gap-6 mt-10">
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-                <Shield className="h-8 w-8 text-[#a4ff00] mx-auto mb-3" />
-                <h3 className="font-bold mb-2">Control Normativo</h3>
-                <p className="text-sm text-gray-200">Supervisión integral de procesos y cumplimiento regulatorio</p>
-              </div>
-              
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-                <Globe className="h-8 w-8 text-[#a4ff00] mx-auto mb-3" />
-                <h3 className="font-bold mb-2">Gobernanza Responsable</h3>
-                <p className="text-sm text-gray-200">Gestión disciplinada de riesgos y transparencia operativa</p>
-              </div>
+            <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#a4ff00]">
+              <h3 className="text-lg font-bold text-[#001f5c] mb-4">✓ Transparencia Operativa</h3>
+              <p className="text-gray-700 text-sm">
+                Registros detallados y auditoría interna de todas las operaciones para garantizar trazabilidad.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#001f5c]">
+              <h3 className="text-lg font-bold text-[#001f5c] mb-4">✓ Estabilidad Patrimonial</h3>
+              <p className="text-gray-700 text-sm">
+                Respaldo de activos propios y estructura financiera sólida para garantizar continuidad operativa.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Paraguay Strategic Position */}
+      {/* Paraguay Strategic Platform Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="mb-6">🌍 Paraguay: Plataforma Estratégica</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Paraguay representa un entorno competitivo y estable para la estructuración de operaciones de comercio internacional. AIG S.A. aprovecha esta posición estratégica para facilitar iniciativas de expansión regional y consolidación comercial en Sudamérica.
-            </p>
+          <h2 className="text-center mb-12">Paraguay como Plataforma Estratégica</h2>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <MapPin className="h-6 w-6 text-[#a4ff00] flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-bold text-[#001f5c] mb-1">Ubicación Estratégica</h3>
+                    <p className="text-gray-700 text-sm">Centro de Sudamérica con acceso a mercados regionales principales</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <Users className="h-6 w-6 text-[#a4ff00] flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-bold text-[#001f5c] mb-1">Estabilidad Política</h3>
+                    <p className="text-gray-700 text-sm">Ambiente regulatorio predecible y marco legal consolidado</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <TrendingUp className="h-6 w-6 text-[#a4ff00] flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-bold text-[#001f5c] mb-1">Oportunidades de Crecimiento</h3>
+                    <p className="text-gray-700 text-sm">Mercado en expansión con potencial de integración regional</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
-              <div className="bg-gradient-to-br from-[#001f5c]/10 to-[#a4ff00]/10 p-8 rounded-lg">
-                <MapPin className="h-10 w-10 text-[#001f5c] mx-auto mb-4" />
-                <h3 className="font-bold text-[#001f5c] mb-2">Ubicación Estratégica</h3>
-                <p className="text-sm text-gray-700">Centro de Sudamérica con acceso a mercados regionales</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-[#001f5c]/10 to-[#a4ff00]/10 p-8 rounded-lg">
-                <TrendingUp className="h-10 w-10 text-[#001f5c] mx-auto mb-4" />
-                <h3 className="font-bold text-[#001f5c] mb-2">Estabilidad Económica</h3>
-                <p className="text-sm text-gray-700">Entorno regulatorio predecible y seguro</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-[#001f5c]/10 to-[#a4ff00]/10 p-8 rounded-lg">
-                <Users className="h-10 w-10 text-[#001f5c] mx-auto mb-4" />
-                <h3 className="font-bold text-[#001f5c] mb-2">Talento Local</h3>
-                <p className="text-sm text-gray-700">Profesionales especializados en comercio internacional</p>
-              </div>
+            <div>
+              <img 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/01Syncaereo_5c0a7c4f.jpeg"
+                alt="Paraguay Aerial View"
+                className="rounded-lg shadow-lg w-full"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#001f5c] via-[#001f5c] to-[#a4ff00]/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-white mb-6">Estructure sus Operaciones Regionales con Confianza</h2>
-            <p className="text-lg text-gray-100 mb-8">
-              Asóciese con AIG S.A. y establezca una presencia estructurada, regulada y estratégicamente respaldada en Paraguay y Sudamérica.
-            </p>
-            <Button className="bg-[#a4ff00] text-[#001f5c] hover:bg-[#8fdd00] font-semibold text-lg px-8 py-6">
-              Iniciar Conversación <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Join Our Team Section */}
-      <section id="empleo" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-center mb-12">Sumate a Nuestro Equipo</h2>
-          <p className="text-center text-gray-700 mb-16 max-w-2xl mx-auto text-lg">
-            Arco Iris Group está en expansión. Buscamos profesionales comprometidos para fortalecer nuestras nuevas divisiones de logística y servicios.
+      <section className="py-16 bg-gradient-to-r from-[#001f5c] to-[#001a47]">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-white mb-6">Listo para Asociarse con AIG?</h2>
+          <p className="text-gray-100 mb-8 max-w-2xl mx-auto">
+            Contáctanos para explorar oportunidades de colaboración y crecimiento mutuo en gestión de comercio internacional.
           </p>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* AIG DRIVERS Card */}
-            <div className="bg-gradient-to-br from-[#001f5c]/5 to-[#a4ff00]/10 p-8 rounded-lg border-2 border-[#001f5c]/20 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-center justify-center h-16 w-16 bg-[#001f5c] rounded-lg mb-6 mx-auto">
-                <Truck className="h-8 w-8 text-[#a4ff00]" />
-              </div>
-              
-              <h3 className="text-2xl font-bold text-[#001f5c] text-center mb-4">AIG DRIVERS</h3>
-              
-              <p className="text-gray-700 text-center mb-6 leading-relaxed">
-                Buscamos conductores profesionales y responsables para nuestra división de logística corporativa.
-              </p>
-              
-              <div className="bg-white p-4 rounded-lg mb-6 border border-[#a4ff00]/30">
-                <p className="text-sm text-gray-700 font-semibold mb-2">📋 Requisitos:</p>
-                <p className="text-sm text-gray-600">Licencia vigente y conocimiento de zona Central</p>
-              </div>
-              
-              <a href="https://forms.gle/seuWhGkLRMjWucSY7" target="_blank" rel="noopener noreferrer" className="block">
-                <Button className="w-full bg-[#001f5c] hover:bg-[#001a47] text-white font-semibold py-3 rounded-lg transition-all">
-                  Postularme como Chofer
-                </Button>
-              </a>
-            </div>
-            
-            {/* AIG CLEANING Card */}
-            <div className="bg-gradient-to-br from-[#a4ff00]/10 to-[#001f5c]/5 p-8 rounded-lg border-2 border-[#a4ff00]/30 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-center justify-center h-16 w-16 bg-[#a4ff00] rounded-lg mb-6 mx-auto">
-                <Sparkles className="h-8 w-8 text-[#001f5c]" />
-              </div>
-              
-              <h3 className="text-2xl font-bold text-[#001f5c] text-center mb-4">AIG CLEANING</h3>
-              
-              <p className="text-gray-700 text-center mb-6 leading-relaxed">
-                Formá parte de nuestra nueva división de limpieza integral para oficinas y residencias. Buscamos personal detallista con ganas de crecer.
-              </p>
-              
-              <div className="bg-white p-4 rounded-lg mb-6 border border-[#a4ff00]/30">
-                <p className="text-sm text-gray-700 font-semibold mb-2">✨ Perfil Buscado:</p>
-                <p className="text-sm text-gray-600">Personal detallista, responsable y con ganas de crecer profesionalmente</p>
-              </div>
-              
-              <a href="https://forms.gle/HT3zKpcAzv7WHDbT9" target="_blank" rel="noopener noreferrer" className="block">
-                <Button className="w-full bg-[#a4ff00] hover:bg-[#8fdd00] text-[#001f5c] font-semibold py-3 rounded-lg transition-all">
-                  Postularme para Limpieza
-                </Button>
-              </a>
-            </div>
-          </div>
+          <Button className="bg-[#a4ff00] text-[#001f5c] hover:bg-[#8fdd00] font-semibold px-8 py-3">
+            Iniciar Conversación <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
         </div>
       </section>
 
@@ -488,114 +443,54 @@ export default function Home() {
           <h2 className="text-center mb-12">Contacto Comercial</h2>
           
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Contact Info */}
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="font-bold text-[#001f5c] mb-2">Datos Legales</h3>
-                <div className="space-y-2 text-sm text-gray-700">
-                  <p><strong>Razón Social:</strong> Arco Iris Group S.A.</p>
-                  <p><strong>País de Constitución:</strong> República del Paraguay</p>
-                  <p><strong>RUC:</strong> 80129345</p>
+              <div className="flex gap-4">
+                <MapPin className="h-6 w-6 text-[#a4ff00] flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-[#001f5c] mb-2">Ubicación</h3>
+                  <p className="text-gray-700">Asunción, Paraguay</p>
                 </div>
               </div>
-
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="font-bold text-[#001f5c] mb-2">Ubicación</h3>
-                <div className="space-y-2 text-sm text-gray-700">
-                  <p><strong>Dirección Legal:</strong></p>
-                  <p>Calle Nanawa entre Tte. Cnel. Ramos Alfaro e Ingaji</p>
-                  <p><strong>Ciudad Base:</strong> Asunción, Paraguay</p>
+              
+              <div className="flex gap-4">
+                <Phone className="h-6 w-6 text-[#a4ff00] flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-[#001f5c] mb-2">Teléfono</h3>
+                  <p className="text-gray-700">+595 (21) XXXX-XXXX</p>
                 </div>
               </div>
-
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="font-bold text-[#001f5c] mb-4 flex items-center gap-2">
-                  <Phone className="h-5 w-5 text-[#a4ff00]" />
-                  Contacto Directo
-                </h3>
-                <div className="space-y-3">
-                  <a href="tel:+595992287990" className="flex items-center gap-2 text-[#001f5c] hover:text-[#a4ff00] transition font-medium">
-                    <span>+595 992 287990</span>
-                  </a>
-                  <p className="text-xs text-gray-600">Disponible para consultas comerciales</p>
+              
+              <div className="flex gap-4">
+                <Mail className="h-6 w-6 text-[#a4ff00] flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-[#001f5c] mb-2">Correo Electrónico</h3>
+                  <p className="text-gray-700">info@aiggroup.com.py</p>
                 </div>
               </div>
             </div>
-
-            {/* Contact Form */}
-            <div className="bg-white p-8 rounded-lg border-2 border-[#a4ff00] shadow-lg">
-              <h3 className="font-bold text-[#001f5c] mb-6 text-lg">Solicitar Información</h3>
-              <form action="https://formspree.io/f/xeepgwge" method="POST" className="space-y-4" onSubmit={(e) => {
-                const formData = new FormData(e.currentTarget);
-                formData.append('_subject', 'Nuevo contacto desde la Web AIG SA');
-                formData.append('_to', 'javierfernandosciolla@gmail.com');
-              }}>
+            
+            <form className="bg-white p-8 rounded-lg shadow-md border border-gray-200" action="https://formspree.io/f/xeepgwge" method="POST">
+              <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Nombre Completo *</label>
-                  <input 
-                    type="text" 
-                    name="nombre" 
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#a4ff00] focus:border-transparent"
-                    placeholder="Tu nombre"
-                  />
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Nombre</label>
+                  <input type="text" name="nombre" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#a4ff00]" />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-                  <input 
-                    type="email" 
-                    name="email" 
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#a4ff00] focus:border-transparent"
-                    placeholder="tu@email.com"
-                  />
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Correo Electrónico</label>
+                  <input type="email" name="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#a4ff00]" />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                  <input 
-                    type="tel" 
-                    name="telefono"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#a4ff00] focus:border-transparent"
-                    placeholder="+595 9XX XXXXXX"
-                  />
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Mensaje</label>
+                  <textarea name="mensaje" rows={4} required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#a4ff00]"></textarea>
                 </div>
                 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Asunto *</label>
-                  <input 
-                    type="text" 
-                    name="asunto" 
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#a4ff00] focus:border-transparent"
-                    placeholder="Consulta sobre servicios"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Mensaje *</label>
-                  <textarea 
-                    name="mensaje" 
-                    required
-                    rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#a4ff00] focus:border-transparent resize-none"
-                    placeholder="Cuéntanos sobre tu consulta..."
-                  />
-                </div>
-                
-                <button 
-                  type="submit"
-                  className="w-full bg-[#001f5c] hover:bg-[#001a47] text-white font-semibold py-3 rounded-lg transition-all duration-200 transform hover:scale-105"
-                >
-                  Enviar Consulta
-                </button>
-                
-                <p className="text-xs text-gray-600 text-center">
-                  Responderemos tu consulta dentro de 24 horas hábiles
-                </p>
-              </form>
-            </div>
+                <Button type="submit" className="w-full bg-[#001f5c] hover:bg-[#001a47] text-white font-semibold py-3 rounded-lg transition-all">
+                  Enviar Mensaje
+                </Button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -605,42 +500,29 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/LOGOPNG_e74cf406.png" 
-                  alt="AIG Logo" 
-                  className="h-10 w-auto"
-                />
-              </div>
-              <p className="text-sm text-gray-300">
-                Plataforma paraguaya de gestión de comercio internacional
-              </p>
+              <h3 className="font-bold mb-4">Arco Iris Group S.A.</h3>
+              <p className="text-gray-300 text-sm">Plataforma integrada de gestión de comercio internacional con respaldo patrimonial y presencia estratégica en Paraguay.</p>
             </div>
             
             <div>
-              <h4 className="font-bold mb-4">Enlaces Rápidos</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#servicios" className="text-gray-300 hover:text-[#a4ff00] transition">Servicios</a></li>
-                <li><a href="#infraestructura" className="text-gray-300 hover:text-[#a4ff00] transition">Infraestructura</a></li>
-                <li><a href="#liderazgo" className="text-gray-300 hover:text-[#a4ff00] transition">Liderazgo</a></li>
-                <li><a href="#contacto" className="text-gray-300 hover:text-[#a4ff00] transition">Contacto</a></li>
+              <h3 className="font-bold mb-4">Enlaces Rápidos</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li><a href="#servicios" className="hover:text-[#a4ff00] transition">Servicios</a></li>
+                <li><a href="#infraestructura" className="hover:text-[#a4ff00] transition">Infraestructura</a></li>
+                <li><a href="#empleo" className="hover:text-[#a4ff00] transition">Empleo</a></li>
+                <li><a href="#contacto" className="hover:text-[#a4ff00] transition">Contacto</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-bold mb-4">Información Legal</h4>
-              <ul className="space-y-2 text-sm">
-                <li><p className="text-gray-300">RUC: 80129345</p></li>
-                <li><p className="text-gray-300">Asunción, Paraguay</p></li>
-                <li><p className="text-gray-300">+595 992 287990</p></li>
-              </ul>
+              <h3 className="font-bold mb-4">Contacto</h3>
+              <p className="text-gray-300 text-sm mb-2">info@aiggroup.com.py</p>
+              <p className="text-gray-300 text-sm">Asunción, Paraguay</p>
             </div>
           </div>
           
-          <div className="border-t border-gray-700 pt-8">
-            <p className="text-center text-sm text-gray-400">
-              © 2026 Arco Iris Group S.A. Todos los derechos reservados. | Gestión de Comercio Internacional desde Paraguay
-            </p>
+          <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2024 Arco Iris Group S.A. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
