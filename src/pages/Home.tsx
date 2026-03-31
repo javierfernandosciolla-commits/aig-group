@@ -97,17 +97,9 @@ export default function Home() {
             <h1 className="text-white mb-6 leading-tight">
               Plataforma Paraguaya de Gestión de Comercio Internacional
             </h1>
-            <p className="text-lg text-gray-100 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-100 leading-relaxed">
               AIG S.A. coordina operaciones estructuradas de importación y exportación con supervisión regulatoria integrada, respaldo patrimonial propio y presencia estratégica en Asunción.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-[#a4ff00] text-[#001f5c] hover:bg-[#8fdd00] font-semibold">
-                Conocer Más <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                Contactar
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -441,7 +433,7 @@ export default function Home() {
                 <Phone className="h-6 w-6 text-[#a4ff00] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-bold text-[#001f5c] mb-2">Teléfono</h3>
-                  <p className="text-gray-700">+595 (21) XXXX-XXXX</p>
+                  <p className="text-gray-700">+595 992 287990</p>
                 </div>
               </div>
               
