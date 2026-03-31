@@ -77,9 +77,7 @@ export default function Home() {
             <a href="#empleo" className="text-sm font-medium text-gray-700 hover:text-[#001f5c] transition">Sumate a nuestro equipo</a>
             <a href="#contacto" className="text-sm font-medium text-gray-700 hover:text-[#001f5c] transition">Contacto</a>
           </div>
-          <Button className="bg-[#001f5c] hover:bg-[#001a47] text-white">
-            Asociarse
-          </Button>
+
         </div>
       </nav>
 
@@ -380,7 +378,7 @@ export default function Home() {
       </section>
 
       {/* Paraguay Strategic Platform Section */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-center mb-12">Paraguay como Plataforma Estratégica</h2>
           
@@ -415,8 +413,8 @@ export default function Home() {
             
             <div>
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/01Syncaereo_5c0a7c4f.jpeg"
-                alt="Paraguay Aerial View"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/ZRGgfsMxOGMtoOch.jpg"
+                alt="Vista Aérea de Asunción, Paraguay"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
@@ -424,21 +422,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-[#001f5c] to-[#001a47]">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-white mb-6">Listo para Asociarse con AIG?</h2>
-          <p className="text-gray-100 mb-8 max-w-2xl mx-auto">
-            Contáctanos para explorar oportunidades de colaboración y crecimiento mutuo en gestión de comercio internacional.
-          </p>
-          <Button className="bg-[#a4ff00] text-[#001f5c] hover:bg-[#8fdd00] font-semibold px-8 py-3">
-            Iniciar Conversación <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section id="contacto" className="py-20 bg-gray-50">
+      <section id="contacto" className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-center mb-12">Contacto Comercial</h2>
           
