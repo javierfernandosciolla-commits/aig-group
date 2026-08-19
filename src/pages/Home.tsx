@@ -94,12 +94,27 @@ export default function Home() {
         
         <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-white mb-6 leading-tight">
-              Plataforma Paraguaya de Gestión de Comercio Internacional
+            <h1
+              className="inline-block rounded-md bg-white/65 px-4 py-2 text-black mb-6 leading-tight"
+              style={{
+                textShadow: "0 0 10px rgba(164, 255, 0, 0.95), 0 4px 18px rgba(164, 255, 0, 0.7)",
+              }}
+            >
+              Endoterapia Vegetal al Arbolado Urbano
             </h1>
-            <p className="text-lg text-gray-100 leading-relaxed">
+            <p className="text-lg text-gray-100 mb-8 leading-relaxed">
               AIG S.A. coordina operaciones estructuradas de importación y exportación con supervisión regulatoria integrada, respaldo patrimonial propio y presencia estratégica en Asunción.
             </p>
+            <a
+              href="https://canva.link/aig-group-endoterapia-vegetal-en-pdf-pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Button className="bg-[#a4ff00] text-[#001f5c] hover:bg-[#8fdd00] font-semibold shadow-lg shadow-[#a4ff00]/30">
+                Ver Presentación Completa (PDF)
+              </Button>
+            </a>
           </div>
         </div>
       </section>
