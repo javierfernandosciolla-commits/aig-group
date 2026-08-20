@@ -149,7 +149,7 @@ export default function Home() {
                 <div className="flex flex-1 flex-col p-6">
                   <div className="mb-6 flex items-center justify-between gap-6">
                     <p className="text-sm leading-relaxed text-gray-700">
-                      Una alianza para impulsar el aprendizaje, las habilidades y las oportunidades de crecimiento profesional.
+                      Una alianza para impulsar el aprendizaje, las habilidades y las oportunidades de crecimiento social.
                     </p>
                     <img
                       src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/NaokLdviPEVOAymW.png"
