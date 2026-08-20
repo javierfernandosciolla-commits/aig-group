@@ -145,14 +145,21 @@ export default function Home() {
                   <p className="relative mt-3 text-sm font-semibold text-violet-100">Conocimiento e Innovación</p>
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <p className="text-sm leading-relaxed text-gray-700">
-                    Una alianza para impulsar el aprendizaje, las habilidades y las oportunidades de crecimiento profesional.
-                  </p>
+                  <div className="mb-4 flex items-center justify-between gap-4">
+                    <p className="text-sm leading-relaxed text-gray-700">
+                      Una alianza para impulsar el aprendizaje, las habilidades y las oportunidades de crecimiento profesional.
+                    </p>
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/NaokLdviPEVOAymW.png"
+                      alt="Logo Conocimiento e Innovación - Asociación Civil"
+                      className="h-16 w-16 shrink-0 object-contain opacity-90"
+                    />
+                  </div>
                   <a
                     href="https://www.oficiosonline.com.ar"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 block"
+                    className="mt-auto block"
                   >
                     <Button className="w-full bg-[#7c3aed] text-white font-semibold shadow-md shadow-[#7c3aed]/25 transition hover:bg-[#6d28d9]">
                       Conocer Más
