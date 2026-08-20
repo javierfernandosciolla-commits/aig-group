@@ -134,25 +134,27 @@ export default function Home() {
               </article>
 
               {/* OficiosOnline Card */}
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#a855f7]/50 bg-white/95 shadow-2xl transition duration-200 hover:-translate-y-1 hover:shadow-[#a855f7]/20">
-                <div className="relative min-h-48 overflow-hidden bg-gradient-to-br from-[#c084fc] via-[#8b5cf6] to-[#3b0764] p-7 text-white">
-                  <div className="absolute -bottom-14 -right-10 h-44 w-44 rounded-full bg-white/20 blur-2xl"></div>
-                  <GraduationCap className="absolute right-7 top-7 h-14 w-14 -rotate-6 text-white/75" aria-hidden="true" />
-                  <p className="relative text-xs font-bold uppercase tracking-[0.22em] text-violet-100">OficiosOnline</p>
-                  <h2 className="relative mt-5 max-w-sm text-2xl font-extrabold uppercase leading-tight text-white">
-                    Unidos por el Futuro de los Oficios
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#a855f7]/30 bg-[#fffdf5] shadow-2xl transition duration-200 hover:-translate-y-1 hover:shadow-[#a855f7]/15">
+                <div className="relative min-h-48 overflow-hidden bg-gradient-to-br from-[#fdfbf7] via-[#f5f0e6] to-[#e8e0d0] p-7 text-[#3b0764]">
+                  <div className="absolute -bottom-14 -right-10 h-44 w-44 rounded-full bg-[#a855f7]/5 blur-2xl"></div>
+                  <GraduationCap className="absolute right-7 top-7 h-14 w-14 -rotate-6 text-[#a855f7]/40" aria-hidden="true" />
+                  <p className="relative text-xs font-bold uppercase tracking-[0.22em] text-[#a855f7]">OficiosOnline</p>
+                  <h2 className="relative mt-5 max-w-sm text-2xl font-extrabold uppercase leading-tight text-[#3b0764]">
+                    Emprendimientos Productivos para Autogestionar Empleos
                   </h2>
-                  <p className="relative mt-3 text-sm font-semibold text-violet-100">Conocimiento e Innovación</p>
+                  <p className="relative mt-3 text-sm font-semibold text-[#6d28d9]">
+                    Alianza Estratégica con "Conocimientos e Innovación" Asociación Civil
+                  </p>
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <div className="mb-4 flex items-center justify-between gap-4">
+                  <div className="mb-6 flex items-center justify-between gap-6">
                     <p className="text-sm leading-relaxed text-gray-700">
                       Una alianza para impulsar el aprendizaje, las habilidades y las oportunidades de crecimiento profesional.
                     </p>
                     <img
                       src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/NaokLdviPEVOAymW.png"
                       alt="Logo Conocimiento e Innovación - Asociación Civil"
-                      className="h-16 w-16 shrink-0 object-contain opacity-90"
+                      className="h-24 w-24 shrink-0 object-contain opacity-95"
                     />
                   </div>
                   <a
