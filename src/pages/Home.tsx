@@ -93,7 +93,7 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <p className="text-sm md:text-base uppercase tracking-[0.28em] text-[#a4ff00] font-semibold mb-5">
               Arco Iris Group S.A. · Paraguay
             </p>
@@ -104,7 +104,7 @@ export default function Home() {
               AIG S.A. coordina operaciones estructuradas de importación y exportación con supervisión regulatoria integrada, respaldo patrimonial propio y presencia estratégica en Asunción.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 text-left mt-12 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left mt-12 items-stretch">
               {/* Endoterapia Vegetal Card */}
               <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#a4ff00]/50 bg-white/95 shadow-2xl transition duration-200 hover:-translate-y-1 hover:shadow-[#a4ff00]/20">
                 <div className="relative min-h-48 overflow-hidden bg-gradient-to-br from-[#a4ff00] via-[#d9ff8c] to-[#135d3d] p-7 text-[#001f5c]">
@@ -130,6 +130,19 @@ export default function Home() {
                       Ver Presentación Completa (PDF)
                     </Button>
                   </a>
+                </div>
+              </article>
+
+              {/* AIG Paraguay Card */}
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#a4ff00]/45 bg-[#001f5c] shadow-2xl transition duration-200 hover:-translate-y-1 hover:shadow-[#a4ff00]/20">
+                <div className="flex h-full flex-col p-3">
+                  <div className="overflow-hidden rounded-xl bg-[#001f5c]">
+                    <img
+                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/tirULlusIYxnQqya.png"
+                      alt="AIG Arco Iris Group S.A.: residencia, cédula paraguaya y constitución de empresas en Paraguay"
+                      className="aspect-square w-full object-contain"
+                    />
+                  </div>
                 </div>
               </article>
 
