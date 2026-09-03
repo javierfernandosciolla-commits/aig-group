@@ -431,33 +431,11 @@ export default function Home() {
       <section id="liderazgo" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-center mb-16">Liderazgo Ejecutivo</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-[#001f5c]/5 to-[#a4ff00]/10 p-8 rounded-lg border-2 border-[#001f5c]/20 shadow-lg">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="flex justify-center">
-                  <img 
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/CPNCARLOSATORRESCEOdeAIGSA_d0c5d7a7.png"
-                    alt="C.P.N. Carlos A. Torres - CEO"
-                    className="w-full max-w-sm rounded-lg shadow-md"
-                  />
-                </div>
-                
-                <div>
-                  <h3 className="text-2xl font-bold text-[#001f5c] mb-2">C.P.N. Carlos A. Torres</h3>
-                  <p className="text-lg font-semibold text-[#a4ff00] mb-6">Chief Executive Officer (CEO)</p>
-                  
-                  <p className="text-gray-700 mb-6 leading-relaxed">
-                    Con más de 20 años de experiencia en gestión de comercio internacional y operaciones aduanales, el C.P.N. Carlos A. Torres lidera AIG S.A. con visión estratégica y compromiso con la excelencia operativa.
-                  </p>
-                  
-                  <div className="bg-white p-4 rounded-lg border-l-4 border-[#a4ff00]">
-                    <p className="text-sm text-gray-700"><strong>Especialización:</strong> Gestión de Comercio Internacional, Compliance Aduanal, Estrategia Corporativa</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <div
+            className="min-h-[320px] sm:min-h-[380px]"
+            aria-label="Espacio reservado para futuro contenido de liderazgo"
+          />
         </div>
       </section>
 
