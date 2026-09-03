@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Globe, Shield, TrendingUp, Users, Building2, MapPin, Phone, Mail, CheckCircle2, Truck, Sparkles, Leaf, GraduationCap } from "lucide-react";
+import { ArrowRight, Globe, Shield, TrendingUp, Users, Building2, MapPin, Phone, Mail, CheckCircle2, Truck, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -81,111 +81,11 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden pt-0" aria-labelledby="hero-title">
-        <div className="absolute inset-0">
-          <img 
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/imagenPortada_bef555ee.png"
-            alt="Camiones en una ruta de Paraguay, representando operaciones de comercio internacional"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#001f5c]/95 via-[#001f5c]/88 to-[#001f5c]/65"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
-          <div className="max-w-6xl mx-auto text-center">
-            <p className="text-sm md:text-base uppercase tracking-[0.28em] text-[#a4ff00] font-semibold mb-5">
-              Arco Iris Group S.A. · Paraguay
-            </p>
-            <h1 id="hero-title" className="text-white mb-6 leading-tight">
-              Gestión de Comercio Internacional
-            </h1>
-            <p className="text-lg md:text-xl text-gray-100 leading-relaxed max-w-3xl mx-auto">
-              AIG S.A. coordina operaciones estructuradas de importación y exportación con supervisión regulatoria integrada, respaldo patrimonial propio y presencia estratégica en Asunción.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left mt-12 items-stretch">
-              {/* Endoterapia Vegetal Card */}
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#a4ff00]/50 bg-white/95 shadow-2xl transition duration-200 hover:-translate-y-1 hover:shadow-[#a4ff00]/20">
-                <div className="relative min-h-48 overflow-hidden bg-gradient-to-br from-[#a4ff00] via-[#d9ff8c] to-[#135d3d] p-7 text-[#001f5c]">
-                  <div className="absolute -right-8 -top-10 h-40 w-40 rounded-full bg-white/30 blur-2xl"></div>
-                  <Leaf className="absolute right-7 top-7 h-14 w-14 rotate-12 text-[#135d3d]/70" aria-hidden="true" />
-                  <p className="relative text-xs font-bold uppercase tracking-[0.22em] text-[#135d3d]">UrbanArbor</p>
-                  <h2 className="relative mt-5 max-w-sm text-2xl font-extrabold uppercase leading-tight text-[#001f5c]">
-                    Endoterapia Vegetal al Arbolado Urbano
-                  </h2>
-                  <p className="relative mt-3 text-sm font-semibold text-[#135d3d]">Soluciones Verdes</p>
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <p className="text-sm leading-relaxed text-gray-700">
-                    Conocé la propuesta de UrbanArbor para el cuidado técnico y sostenible del arbolado urbano.
-                  </p>
-                  <a
-                    href="https://canva.link/aig-group-endoterapia-vegetal-en-pdf-pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 block"
-                  >
-                    <Button className="w-full bg-[#a4ff00] text-[#001f5c] font-semibold shadow-md shadow-[#a4ff00]/30 transition hover:bg-[#8fdd00]">
-                      Ver Presentación Completa (PDF)
-                    </Button>
-                  </a>
-                </div>
-              </article>
-
-              {/* AIG Paraguay Card */}
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#a4ff00]/45 bg-[#001f5c] shadow-2xl transition duration-200 hover:-translate-y-1 hover:shadow-[#a4ff00]/20">
-                <div className="flex h-full flex-col p-3">
-                  <div className="overflow-hidden rounded-xl bg-[#001f5c]">
-                    <img
-                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/tirULlusIYxnQqya.png"
-                      alt="AIG Arco Iris Group S.A.: residencia, cédula paraguaya y constitución de empresas en Paraguay"
-                      className="aspect-square w-full object-contain"
-                    />
-                  </div>
-                </div>
-              </article>
-
-              {/* OficiosOnline Card */}
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#a855f7]/30 bg-[#fffdf5] shadow-2xl transition duration-200 hover:-translate-y-1 hover:shadow-[#a855f7]/15">
-                <div className="relative min-h-48 overflow-hidden bg-gradient-to-br from-[#fdfbf7] via-[#f5f0e6] to-[#e8e0d0] p-7 text-[#3b0764]">
-                  <div className="absolute -bottom-14 -right-10 h-44 w-44 rounded-full bg-[#a855f7]/5 blur-2xl"></div>
-                  <GraduationCap className="absolute right-7 top-7 h-14 w-14 -rotate-6 text-[#a855f7]/40" aria-hidden="true" />
-                  <p className="relative text-xs font-bold uppercase tracking-[0.22em] text-[#a855f7]">OficiosOnline</p>
-                  <h2 className="relative mt-5 max-w-sm text-2xl font-extrabold uppercase leading-tight text-[#3b0764]">
-                    Emprendimientos Productivos para Autogestionar Empleos
-                  </h2>
-                  <p className="relative mt-3 text-sm font-semibold text-[#6d28d9]">
-                    Alianza Estratégica con "Conocimientos e Innovación" Asociación Civil
-                  </p>
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <div className="mb-6 flex items-center justify-between gap-6">
-                    <p className="text-sm leading-relaxed text-gray-700">
-                      Una alianza para impulsar el aprendizaje, las habilidades y las oportunidades de crecimiento social.
-                    </p>
-                    <img
-                      src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/NaokLdviPEVOAymW.png"
-                      alt="Logo Conocimiento e Innovación - Asociación Civil"
-                      className="h-24 w-24 shrink-0 object-contain opacity-95"
-                    />
-                  </div>
-                  <a
-                    href="https://www.oficiosonline.com.ar"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-auto block"
-                  >
-                    <Button className="w-full bg-[#7c3aed] text-white font-semibold shadow-md shadow-[#7c3aed]/25 transition hover:bg-[#6d28d9]">
-                      Conocer Más
-                    </Button>
-                  </a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section: intentionally blank */}
+      <section
+        className="min-h-[calc(100vh-81px)] bg-[#00000000]"
+        aria-hidden="true"
+      />
 
       {/* Mission & Vision */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
