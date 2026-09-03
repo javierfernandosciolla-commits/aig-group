@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, ChevronLeft, ChevronRight, Globe, Shield, TrendingUp, Users, Building2, MapPin, Phone, Mail, CheckCircle2, Truck, Sparkles } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 /**
  * Landing Page - Arco Iris Group S.A.
@@ -49,6 +49,20 @@ export default function Home() {
       currentSlide === carouselSlides.length - 1 ? 0 : currentSlide + 1
     );
   };
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
+    const intervalId = window.setInterval(() => {
+      setActiveSlide((currentSlide) =>
+        currentSlide === carouselSlides.length - 1 ? 0 : currentSlide + 1
+      );
+    }, 2000);
+
+    return () => window.clearInterval(intervalId);
+  }, [carouselSlides.length]);
 
   const services = [
     {
@@ -115,8 +129,8 @@ export default function Home() {
 
       {/* Hero Section: carousel */}
       <section className="bg-[#001f5c]" aria-label="Presentaciones destacadas">
-        <div className="mx-auto flex min-h-[calc(100vh-81px)] max-w-7xl items-center justify-center px-4 py-6 sm:px-8 sm:py-10">
-          <div className="relative h-[min(78vh,860px)] min-h-[510px] w-full overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-[#001f5c] via-[#08275d] to-[#300c29] shadow-2xl">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-8 sm:py-10">
+          <div className="relative h-[min(66vh,760px)] min-h-[430px] w-full overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-[#001f5c] via-[#08275d] to-[#300c29] shadow-2xl">
             <div
               className="flex h-full transition-transform duration-500 ease-out motion-reduce:transition-none"
               style={{ transform: `translateX(-${activeSlide * 100}%)` }}
@@ -167,6 +181,37 @@ export default function Home() {
             <p className="sr-only" aria-live="polite">
               Afiche {activeSlide + 1} de {carouselSlides.length}
             </p>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-white/15 bg-white/10 px-5 py-6 text-center shadow-xl backdrop-blur-sm sm:px-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#a4ff00]">
+              Propuestas destacadas
+            </p>
+            <h2 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+              Conocé nuestras propuestas
+            </h2>
+            <div className="mt-5 grid gap-3 md:grid-cols-2 md:gap-4">
+              <a
+                href="https://canva.link/aig-group-endoterapia-vegetal-en-pdf-pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button className="h-auto w-full whitespace-normal bg-[#a4ff00] px-5 py-3 text-[#001f5c] shadow-md shadow-[#a4ff00]/25 transition hover:bg-[#8fdd00]">
+                  Endoterapia Vegetal al Arbolado Urbano · Ver Presentación Completa (PDF)
+                </Button>
+              </a>
+              <a
+                href="https://www.oficiosonline.com.ar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button className="h-auto w-full whitespace-normal bg-[#7c3aed] px-5 py-3 text-white shadow-md shadow-[#7c3aed]/25 transition hover:bg-[#6d28d9]">
+                  OficiosOnline · Conocer Más
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
