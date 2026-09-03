@@ -505,8 +505,8 @@ export default function Home() {
             
             <div>
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/ZRGgfsMxOGMtoOch.jpg"
-                alt="Vista Aérea de Asunción, Paraguay"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/sTBQLdskUArheQMt.jpg"
+                alt="Vista panorámica de Asunción, Paraguay"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
