@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Globe, Shield, TrendingUp, Users, Building2, MapPin, Phone, Mail, CheckCircle2, Truck, Sparkles } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Globe, Shield, TrendingUp, Users, Building2, MapPin, Phone, Mail, CheckCircle2, Truck, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -17,6 +17,38 @@ import { useState } from "react";
 
 export default function Home() {
   const [activeService, setActiveService] = useState<number | null>(null);
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const carouselSlides = [
+    {
+      src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/KhFtYKGmnqRcMDHR.jpg",
+      alt: "Afiche de AIG sobre importación, exportación y gestión de comercio internacional en Paraguay",
+    },
+    {
+      src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/kOozJkTEZPNxwpaM.png",
+      alt: "Afiche de AIG sobre residencia, cédula paraguaya y constitución de empresas en Paraguay",
+    },
+    {
+      src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/kfTtormmeObxzFlq.jpg",
+      alt: "Afiche de OficiosOnline sobre aprendizaje de oficios, habilidades y oportunidades de crecimiento social",
+    },
+    {
+      src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/nWgLeBClbVvlfeCF.jpg",
+      alt: "Afiche de Soluciones Verdes sobre cuidado de arbolado urbano y endoterapia vegetal",
+    },
+  ];
+
+  const showPreviousSlide = () => {
+    setActiveSlide((currentSlide) =>
+      currentSlide === 0 ? carouselSlides.length - 1 : currentSlide - 1
+    );
+  };
+
+  const showNextSlide = () => {
+    setActiveSlide((currentSlide) =>
+      currentSlide === carouselSlides.length - 1 ? 0 : currentSlide + 1
+    );
+  };
 
   const services = [
     {
@@ -81,11 +113,63 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section: intentionally blank */}
-      <section
-        className="min-h-[calc(100vh-81px)] bg-[#00000000]"
-        aria-hidden="true"
-      />
+      {/* Hero Section: carousel */}
+      <section className="bg-[#001f5c]" aria-label="Presentaciones destacadas">
+        <div className="mx-auto flex min-h-[calc(100vh-81px)] max-w-7xl items-center justify-center px-4 py-6 sm:px-8 sm:py-10">
+          <div className="relative h-[min(78vh,860px)] min-h-[510px] w-full overflow-hidden rounded-2xl border border-white/20 bg-gradient-to-br from-[#001f5c] via-[#08275d] to-[#300c29] shadow-2xl">
+            <div
+              className="flex h-full transition-transform duration-500 ease-out motion-reduce:transition-none"
+              style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+            >
+              {carouselSlides.map((slide) => (
+                <figure key={slide.src} className="flex h-full min-w-full items-center justify-center p-4 sm:p-6">
+                  <img
+                    src={slide.src}
+                    alt={slide.alt}
+                    className="h-full w-full object-contain drop-shadow-2xl"
+                  />
+                </figure>
+              ))}
+            </div>
+
+            <button
+              type="button"
+              onClick={showPreviousSlide}
+              aria-label="Ver afiche anterior"
+              className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-white/50 bg-[#001f5c]/85 p-2.5 text-white shadow-lg transition hover:bg-[#001f5c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a4ff00] sm:left-5"
+            >
+              <ChevronLeft className="h-5 w-5" aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={showNextSlide}
+              aria-label="Ver siguiente afiche"
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-white/50 bg-[#001f5c]/85 p-2.5 text-white shadow-lg transition hover:bg-[#001f5c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a4ff00] sm:right-5"
+            >
+              <ChevronRight className="h-5 w-5" aria-hidden="true" />
+            </button>
+
+            <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-[#001f5c]/80 px-3 py-2">
+              {carouselSlides.map((slide, index) => (
+                <button
+                  key={slide.src}
+                  type="button"
+                  onClick={() => setActiveSlide(index)}
+                  aria-label={`Ver afiche ${index + 1}`}
+                  aria-current={index === activeSlide}
+                  className={`h-2.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a4ff00] ${
+                    index === activeSlide ? "w-7 bg-[#a4ff00]" : "w-2.5 bg-white/65 hover:bg-white"
+                  }`}
+                />
+              ))}
+            </div>
+
+            <p className="sr-only" aria-live="polite">
+              Afiche {activeSlide + 1} de {carouselSlides.length}
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Mission & Vision */}
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
