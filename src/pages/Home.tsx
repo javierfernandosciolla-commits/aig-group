@@ -217,22 +217,38 @@ export default function Home() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <section className="bg-[#fbfbfb] py-20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div className="bg-[#001f5c] text-white p-10 rounded-lg shadow-lg">
-              <h2 className="text-white mb-4">🎯 Misión</h2>
-              <p className="text-gray-100 leading-relaxed">
+          <div className="mb-16 grid gap-6 md:grid-cols-2">
+            <article
+              aria-labelledby="mision-title"
+              className="flex min-h-[240px] flex-col gap-4 rounded-lg border border-[#e0e0e0] bg-white p-6 transition duration-200 hover:-translate-y-0.5 hover:border-[#d0d0d0] hover:shadow-[0_4px_20px_rgba(0,0,0,0.04),0_1px_3px_rgba(0,0,0,0.03)] sm:p-8"
+            >
+              <div className="flex items-center gap-3">
+                <span className="h-0.5 w-7 shrink-0 rounded-full bg-[#001f5c]" aria-hidden="true" />
+                <h2 id="mision-title" className="text-base font-semibold tracking-[-0.02em] text-[#111111]">
+                  Misión
+                </h2>
+              </div>
+              <p className="text-[14.5px] leading-[1.6] tracking-[-0.01em] text-[#333333]">
                 Proveer soluciones estructuradas de gestión de comercio internacional mediante una plataforma integrada que combina experiencia aduanera interna, soporte contable y activos corporativos estratégicos, garantizando eficiencia operativa, cumplimiento normativo y estabilidad a largo plazo.
               </p>
-            </div>
+            </article>
             
-            <div className="bg-gradient-to-br from-[#a4ff00] to-[#8fdd00] text-[#001f5c] p-10 rounded-lg shadow-lg">
-              <h2 className="text-[#001f5c] mb-4">🌎 Visión</h2>
-              <p className="text-[#001f5c] leading-relaxed font-medium">
+            <article
+              aria-labelledby="vision-title"
+              className="flex min-h-[240px] flex-col gap-4 rounded-lg border border-[#e0e0e0] bg-white p-6 transition duration-200 hover:-translate-y-0.5 hover:border-[#d0d0d0] hover:shadow-[0_4px_20px_rgba(0,0,0,0.04),0_1px_3px_rgba(0,0,0,0.03)] sm:p-8"
+            >
+              <div className="flex items-center gap-3">
+                <span className="h-0.5 w-7 shrink-0 rounded-full bg-[#a4ff00]" aria-hidden="true" />
+                <h2 id="vision-title" className="text-base font-semibold tracking-[-0.02em] text-[#111111]">
+                  Visión
+                </h2>
+              </div>
+              <p className="text-[14.5px] leading-[1.6] tracking-[-0.01em] text-[#333333]">
                 Consolidar a AIG S.A. como una plataforma regional líder en gestión de comercio internacional, reconocida por sus estándares de gobernanza, estructura integrada y respaldo patrimonial, facilitando la expansión estratégica en Sudamérica.
               </p>
-            </div>
+            </article>
           </div>
 
           {/* Valores */}
