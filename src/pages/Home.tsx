@@ -29,12 +29,12 @@ export default function Home() {
       alt: "Afiche de AIG sobre residencia, cédula paraguaya y constitución de empresas en Paraguay",
     },
     {
-      src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/kfTtormmeObxzFlq.jpg",
-      alt: "Afiche de OficiosOnline sobre aprendizaje de oficios, habilidades y oportunidades de crecimiento social",
+      src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/QHoaNnBVEimiZqLM.png",
+      alt: "Afiche actualizado de OficiosOnline sobre aprendizaje de oficios, habilidades y oportunidades de crecimiento social",
     },
     {
-      src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/nWgLeBClbVvlfeCF.jpg",
-      alt: "Afiche de Soluciones Verdes sobre cuidado de arbolado urbano y endoterapia vegetal",
+      src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/cPPFWkdfEPkfYiTC.png",
+      alt: "Afiche actualizado de Arboricultura sobre cuidado de arbolado urbano y endoterapia vegetal",
     },
   ];
 
