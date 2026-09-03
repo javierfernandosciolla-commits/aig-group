@@ -395,40 +395,34 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-center mb-12">Infraestructura Corporativa en Asunción</h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="space-y-6">
-                <div className="bg-white p-6 rounded-lg border-l-4 border-[#a4ff00] shadow-sm">
-                  <h3 className="text-lg font-bold text-[#001f5c] mb-2">Departamentos Ejecutivos</h3>
-                  <p className="text-gray-700">
-                    Unidades residenciales completamente equipadas ubicadas estratégicamente en el distrito financiero de Asunción, diseñadas para alojar ejecutivos y socios comerciales internacionales.
-                  </p>
-                </div>
-                
-                <div className="bg-white p-6 rounded-lg border-l-4 border-[#00d9ff] shadow-sm">
-                  <h3 className="text-lg font-bold text-[#001f5c] mb-2">Movilidad Corporativa</h3>
-                  <p className="text-gray-700">
-                    Servicios de transporte y logística disponibles para ejecutivos internacionales que requieran soporte estructurado durante su estadía operativa en Paraguay.
-                  </p>
-                </div>
+          <div className="grid items-stretch gap-6 md:grid-cols-2">
+            <article className="min-h-[176px] rounded-lg border-l-4 border-[#a4ff00] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <h3 className="mb-2 text-lg font-bold text-[#001f5c]">Departamentos Ejecutivos</h3>
+              <p className="text-gray-700">
+                Unidades residenciales completamente equipadas ubicadas estratégicamente en el distrito financiero de Asunción, diseñadas para alojar ejecutivos y socios comerciales internacionales.
+              </p>
+            </article>
 
-                <div className="bg-white p-6 rounded-lg border-l-4 border-[#ff3366] shadow-sm">
-                  <h3 className="text-lg font-bold text-[#001f5c] mb-2">Continuidad Operativa</h3>
-                  <p className="text-gray-700">
-                    Infraestructura de respaldo y redundancia para garantizar operaciones sin interrupciones, con protocolos de seguridad y contingencia implementados.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="relative">
-              <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663292592046/RH7S6A22Me7bVzdg5x5rD5/01Sync_5d3c1f5e.jpeg"
-                alt="Infraestructura AIG"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#001f5c]/20 to-transparent rounded-lg"></div>
-            </div>
+            <article className="min-h-[176px] rounded-lg border-l-4 border-[#00d9ff] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <h3 className="mb-2 text-lg font-bold text-[#001f5c]">Movilidad Corporativa</h3>
+              <p className="text-gray-700">
+                Servicios de transporte y logística disponibles para ejecutivos internacionales que requieran soporte estructurado durante su estadía operativa en Paraguay.
+              </p>
+            </article>
+
+            <article className="min-h-[176px] rounded-lg border-l-4 border-[#ff3366] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <h3 className="mb-2 text-lg font-bold text-[#001f5c]">Continuidad Operativa</h3>
+              <p className="text-gray-700">
+                Infraestructura de respaldo y redundancia para garantizar operaciones sin interrupciones, con protocolos de seguridad y contingencia implementados.
+              </p>
+            </article>
+
+            <article className="min-h-[176px] rounded-lg border-l-4 border-[#001f5c] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+              <h3 className="mb-2 text-lg font-bold text-[#001f5c]">Soporte Administrativo y Legal</h3>
+              <p className="text-gray-700">
+                Espacios de trabajo y respaldo operativo para gestiones bancarias, trámites societarios y representación administrativa local en Paraguay.
+              </p>
+            </article>
           </div>
         </div>
       </section>
