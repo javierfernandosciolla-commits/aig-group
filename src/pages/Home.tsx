@@ -119,7 +119,7 @@ export default function Home() {
           <div className="hidden md:flex gap-8 items-center">
             <a href="#servicios" className="text-sm font-medium text-gray-700 hover:text-[#001f5c] transition">Servicios</a>
             <a href="#infraestructura" className="text-sm font-medium text-gray-700 hover:text-[#001f5c] transition">Infraestructura</a>
-            <a href="#liderazgo" className="text-sm font-medium text-gray-700 hover:text-[#001f5c] transition">Liderazgo</a>
+            <a href="#liderazgo" className="text-sm font-medium text-gray-700 hover:text-[#001f5c] transition">Invertir</a>
             <a href="#empleo" className="text-sm font-medium text-gray-700 hover:text-[#001f5c] transition">Sumate a nuestro equipo</a>
             <a href="#contacto" className="text-sm font-medium text-gray-700 hover:text-[#001f5c] transition">Contacto</a>
           </div>
@@ -430,7 +430,7 @@ export default function Home() {
       {/* Leadership Section */}
       <section id="liderazgo" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-center mb-16">Liderazgo Ejecutivo</h2>
+          <h2 className="text-center mb-16">Desarrollo de Inversiones en Paraguay</h2>
 
           <div
             className="min-h-[320px] sm:min-h-[380px]"
