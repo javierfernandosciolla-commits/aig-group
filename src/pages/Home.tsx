@@ -432,22 +432,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-center mb-16">Desarrollo de Inversiones en Paraguay</h2>
 
-          <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-14">
-            <div className="flex justify-center">
-              <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/RsYDqYbdRhGKxWqM.png"
-                alt="Centro Estudio: Contabilidad, Auditoría y Agencia de Despachantes"
-                className="h-auto w-full max-w-[320px] object-contain"
-              />
-            </div>
-
-            <article className="overflow-hidden rounded-lg border border-[#001f5c]/20 bg-white shadow-lg">
-              <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/QKaLlVZEHsItqlvN.png"
-                alt="Cuadro tributario con tasas vigentes de IRE, IDU, IRP, IVA, Maquila e IPS en Paraguay"
-                className="h-auto w-full"
-              />
-            </article>
+          <div className="mx-auto max-w-3xl overflow-hidden rounded-lg border border-[#001f5c]/20 bg-white shadow-lg">
+            <img
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663292592046/gNflCtzWDVQGiONL.png"
+              alt="Centro Estudio y cuadro tributario con tasas vigentes de IRE, IDU, IRP, IVA, Maquila e IPS en Paraguay"
+              className="h-auto w-full"
+            />
           </div>
 
           <div className="mt-10 flex justify-center">
