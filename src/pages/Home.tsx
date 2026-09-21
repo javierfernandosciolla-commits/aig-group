@@ -449,6 +449,18 @@ export default function Home() {
               />
             </article>
           </div>
+
+          <div className="mt-10 flex justify-center">
+            <a
+              href="/documentos/resumen-sistema-tributario-paraguay-2026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#001f5c] px-6 py-3 text-center text-sm font-bold tracking-wide text-white shadow-md transition hover:bg-[#a4ff00] hover:text-[#001f5c] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#001f5c] focus-visible:ring-offset-2"
+            >
+              SISTEMA TRIBUTARIO VIGENTE 2026
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </section>
 
